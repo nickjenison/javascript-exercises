@@ -34,6 +34,8 @@ const sumAll = function (a, b) {
             return "ERROR";
         case a === typeof "string" || b === typeof "string":
             return "ERROR";
+        case !Number.isFinite(a) || !Number.isFinite(b):
+            return "ERROR"; 
         default:
             break;
     }
